@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأعمال الهندسية - معرض أعمال المهندس</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-briefcase"></i>
+                <a href="index.html" style="color: white; text-decoration: none;">معرض أعمالي</a>
+            </h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="research.html" class="nav-link">الأبحاث</a></li>
+                    <li><a href="engineering.html" class="nav-link active">الهندسة</a></li>
+                    <li><a href="design.html" class="nav-link">التصاميم</a></li>
+                    <li><a href="reports.html" class="nav-link">التقارير</a></li>
+                    <li><a href="other.html" class="nav-link">أعمال أخرى</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">الأعمال الهندسية المتقدمة</h1>
+                <p class="page-hero-subtitle">اكتشف مشاريع هندسية مبتكرة وحلول تقنية متطورة</p>
+                <div class="breadcrumb">
+                    <a href="index.html">الرئيسية</a>
+                    <i class="fas fa-chevron-left"></i>
+                    <span>الهندسة</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Categories -->
+    <section class="research-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-filter active" data-category="all">جميع المشاريع</button>
+                <button class="category-filter" data-category="web-development">تطوير الويب</button>
+                <button class="category-filter" data-category="mobile-apps">تطبيقات الجوال</button>
+                <button class="category-filter" data-category="ai-projects">مشاريع الذكاء الاصطناعي</button>
+                <button class="category-filter" data-category="iot-projects">مشاريع إنترنت الأشياء</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Grid -->
+    <section class="research-grid-section">
+        <div class="container">
+            <div class="research-grid">
+                <!-- Project 1 -->
+                <div class="research-item" data-category="web-development">
+                    <div class="research-image">
+                        <img src="cardrive.jpg" alt="تطبيق معرض السيارات">
+                        <div class="research-badge">مشروع مميز</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-users"></i> 500+ مستخدم</span>
+                                <span><i class="fas fa-star"></i> 4.8 تقييم</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">تطوير ويب</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">تطبيق ويب لمعرض السيارات الذكي</h3>
+                        <p class="research-abstract">منصة متكاملة لمعرض السيارات مع أنظمة ذكية للرد التلقائي والترحيب بالعملاء، وإدارة المخزون والمبيعات...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">React.js</span>
+                            <span class="research-tag">Node.js</span>
+                            <span class="research-tag">MongoDB</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openProjectModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض المشروع</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="openProjectDemo('https://cardrive-demo.com')">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>تجربة مباشرة</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="research-item" data-category="mobile-apps">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=تطبيق+جوال" alt="تطبيق جوال">
+                        <div class="research-badge">تطبيق جديد</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-download"></i> 10K+ تحميل</span>
+                                <span><i class="fas fa-star"></i> 4.6 تقييم</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">تطبيق جوال</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">تطبيق إدارة المهام الذكي</h3>
+                        <p class="research-abstract">تطبيق جوال متطور لإدارة المهام والمشاريع مع ميزات الذكاء الاصطناعي لتنظيم الوقت وتحسين الإنتاجية...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">Flutter</span>
+                            <span class="research-tag">Firebase</span>
+                            <span class="research-tag">AI</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openProjectModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض المشروع</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadApp('task-manager.apk')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل التطبيق</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="research-item" data-category="ai-projects">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=مشروع+ذكاء+اصطناعي" alt="مشروع ذكاء اصطناعي">
+                        <div class="research-badge">مبتكر</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-brain"></i> 95% دقة</span>
+                                <span><i class="fas fa-clock"></i> 24/7 عمل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">ذكاء اصطناعي</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">نظام تحليل الصور الطبية بالذكاء الاصطناعي</h3>
+                        <p class="research-abstract">نظام متقدم لتحليل الصور الطبية باستخدام خوارزميات التعلم العميق، يساعد الأطباء في التشخيص المبكر...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">Python</span>
+                            <span class="research-tag">TensorFlow</span>
+                            <span class="research-tag">OpenCV</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openProjectModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض المشروع</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="requestDemo()">
+                                <i class="fas fa-video"></i>
+                                <span>طلب عرض توضيحي</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="research-item" data-category="iot-projects">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/FF9800/ffffff?text=مشروع+إنترنت+الأشياء" alt="مشروع إنترنت الأشياء">
+                        <div class="research-badge">مشروع تجريبي</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-sensor"></i> 50+ جهاز</span>
+                                <span><i class="fas fa-network-wired"></i> متصل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">إنترنت الأشياء</span>
+                            <span class="research-date">2023</span>
+                        </div>
+                        <h3 class="research-title">نظام المنزل الذكي المتكامل</h3>
+                        <p class="research-abstract">نظام متكامل لإدارة المنزل الذكي يتحكم في الإضاءة والتدفئة والأمان، مع واجهة مستخدم بسيطة وتطبيق جوال...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">Arduino</span>
+                            <span class="research-tag">ESP32</span>
+                            <span class="research-tag">MQTT</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openProjectModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض المشروع</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadDocumentation('smart-home.pdf')">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>تحميل الدليل</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="research-item" data-category="web-development">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=منصة+تعليمية" alt="منصة تعليمية">
+                        <div class="research-badge">منصة تعليمية</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-graduation-cap"></i> 1000+ طالب</span>
+                                <span><i class="fas fa-chalkboard-teacher"></i> 50+ مدرس</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">تطوير ويب</span>
+                            <span class="research-date">2023</span>
+                        </div>
+                        <h3 class="research-title">منصة التعلم الإلكتروني المتقدمة</h3>
+                        <p class="research-abstract">منصة تعليمية شاملة تدعم التعلم عن بعد مع أدوات تفاعلية ومؤتمرات فيديو ومتابعة تقدم الطلاب...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">Vue.js</span>
+                            <span class="research-tag">Laravel</span>
+                            <span class="research-tag">WebRTC</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openProjectModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض المشروع</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="openProjectDemo('https://edu-platform.com')">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>تجربة المنصة</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content research-modal">
+            <span class="close">&times;</span>
+            <div class="research-modal-header">
+                <div class="research-modal-meta">
+                    <span class="research-modal-type">مشروع هندسي</span>
+                    <span class="research-modal-date">2024</span>
+                </div>
+                <h2 id="projectModalTitle">عنوان المشروع</h2>
+                <div class="research-modal-stats">
+                    <span><i class="fas fa-code-branch"></i> <span id="projectModalTech">تقنية</span></span>
+                    <span><i class="fas fa-calendar"></i> <span id="projectModalDuration">المدة</span></span>
+                    <span><i class="fas fa-users"></i> <span id="projectModalTeam">الفريق</span></span>
+                </div>
+            </div>
+            <div class="research-modal-body">
+                <div class="research-modal-abstract">
+                    <h3>وصف المشروع</h3>
+                    <p id="projectModalDescription">وصف المشروع...</p>
+                </div>
+                <div class="research-modal-methodology">
+                    <h3>التقنيات المستخدمة</h3>
+                    <p id="projectModalTechnologies">التقنيات المستخدمة...</p>
+                </div>
+                <div class="research-modal-results">
+                    <h3>النتائج والإنجازات</h3>
+                    <p id="projectModalResults">النتائج والإنجازات...</p>
+                </div>
+            </div>
+            <div class="research-modal-footer">
+                <button class="research-modal-btn primary" onclick="openProjectDemo('current-project')">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>تجربة المشروع</span>
+                </button>
+                <button class="research-modal-btn secondary" onclick="contactAboutProject()">
+                    <i class="fas fa-envelope"></i>
+                    <span>استفسار عن المشروع</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 معرض أعمال المهندس. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="engineering-script.js"></script>
+</body>
+</html>

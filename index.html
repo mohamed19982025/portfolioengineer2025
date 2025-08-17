@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المهندس</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-briefcase"></i>
+                معرض أعمالي
+            </h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#portfolio" class="nav-link">الأعمال</a></li>
+                    <li><a href="#contact" class="nav-link">اتصل بي</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">مرحباً بكم في معرض أعمال المهندس</h2>
+                    <p class="hero-subtitle">اكتشف عالم الإبداع الهندسي والتصاميم المبتكرة</p>
+                    <p class="hero-description">من المشاريع الهندسية المتقدمة إلى التصاميم الرقمية المذهلة، كل عمل يحكي قصة نجاح وإبداع</p>
+                    <a href="#portfolio" class="cta-btn">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="profile-photo.jpg" alt="المهندس محمد سعيد" class="profile-photo">
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">معرض الأعمال</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">جميع الأعمال</button>
+                <button class="filter-btn" data-filter="engineering">الأعمال الهندسية</button>
+                <button class="filter-btn" data-filter="research">أعمال الأبحاث</button>
+                <button class="filter-btn" data-filter="reports">أعمال التقارير</button>
+                <button class="filter-btn" data-filter="design">أعمال التصاميم</button>
+                <button class="filter-btn" data-filter="videos">الفيديوهات</button>
+                <button class="filter-btn" data-filter="medical">أعمال طبية</button>
+                <button class="filter-btn" data-filter="islamic">أعمال إسلامية</button>
+                <button class="filter-btn" data-filter="other">أعمال أخرى</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Engineering Works -->
+                <div class="portfolio-item" data-category="engineering">
+                    <div class="portfolio-image">
+                        <img src="cardrive.jpg" alt="تطبيق معرض السيارات">
+                        <div class="portfolio-badge">مشروع مميز</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-car"></i>
+                            <span>تطوير ويب</span>
+                        </div>
+                        <h3 class="portfolio-title">تطبيق ويب لمعرض سيارات</h3>
+                        <p class="portfolio-description">اكتشف كيف حولت فكرة بسيطة إلى منصة متكاملة لمعرض السيارات مع أنظمة ذكية للرد التلقائي والترحيب بالعملاء...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">رد تلقائي</span>
+                            <span class="feature-tag">إدارة العملاء</span>
+                            <span class="feature-tag">تصميم متجاوب</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='engineering.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="engineering">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=تطبيق+جوال" alt="تطبيق جوال">
+                        <div class="portfolio-badge">تطبيق جديد</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>تطبيق جوال</span>
+                        </div>
+                        <h3 class="portfolio-title">تطبيق إدارة المهام الذكي</h3>
+                        <p class="portfolio-description">تطبيق جوال متطور لإدارة المهام والمشاريع مع ميزات الذكاء الاصطناعي لتنظيم الوقت وتحسين الإنتاجية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">ذكاء اصطناعي</span>
+                            <span class="feature-tag">إدارة مهام</span>
+                            <span class="feature-tag">تطبيق متجاوب</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='engineering.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="engineering">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=مشروع+ذكاء+اصطناعي" alt="مشروع ذكاء اصطناعي">
+                        <div class="portfolio-badge">مبتكر</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-brain"></i>
+                            <span>ذكاء اصطناعي</span>
+                        </div>
+                        <h3 class="portfolio-title">نظام تحليل الصور الطبية</h3>
+                        <p class="portfolio-description">نظام متقدم لتحليل الصور الطبية باستخدام خوارزميات التعلم العميق، يساعد الأطباء في التشخيص المبكر...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تعلم عميق</span>
+                            <span class="feature-tag">تحليل صور</span>
+                            <span class="feature-tag">دقة عالية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='engineering.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="engineering">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/FF9800/ffffff?text=مشروع+إنترنت+الأشياء" alt="مشروع إنترنت الأشياء">
+                        <div class="portfolio-badge">مشروع تجريبي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-network-wired"></i>
+                            <span>إنترنت الأشياء</span>
+                        </div>
+                        <h3 class="portfolio-title">نظام المنزل الذكي المتكامل</h3>
+                        <p class="portfolio-description">نظام متكامل لإدارة المنزل الذكي يتحكم في الإضاءة والتدفئة والأمان، مع واجهة مستخدم بسيطة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تحكم ذكي</span>
+                            <span class="feature-tag">توفير طاقة</span>
+                            <span class="feature-tag">أمان متقدم</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='engineering.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="engineering">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=منصة+تعليمية" alt="منصة تعليمية">
+                        <div class="portfolio-badge">منصة تعليمية</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>منصة تعليمية</span>
+                        </div>
+                        <h3 class="portfolio-title">منصة التعلم الإلكتروني المتقدمة</h3>
+                        <p class="portfolio-description">منصة تعليمية شاملة تدعم التعلم عن بعد مع أدوات تفاعلية ومؤتمرات فيديو ومتابعة تقدم الطلاب...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تعلم عن بعد</span>
+                            <span class="feature-tag">مؤتمرات فيديو</span>
+                            <span class="feature-tag">متابعة تقدم</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='engineering.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <!-- Research Works -->
+                <div class="portfolio-item" data-category="research">
+                    <div class="portfolio-image">
+                        <img src="bahs.jpg" alt="أعمال الأبحاث">
+                        <div class="portfolio-badge">بحث متقدم</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-microscope"></i>
+                            <span>أبحاث علمية</span>
+                        </div>
+                        <h3 class="portfolio-title">دراسات متقدمة في الهندسة</h3>
+                        <p class="portfolio-description">اكتشف أحدث الأبحاث والدراسات في مجال الهندسة، من النظريات المتقدمة إلى التطبيقات العملية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">نظريات متقدمة</span>
+                            <span class="feature-tag">تطبيقات عملية</span>
+                            <span class="feature-tag">نتائج مثبتة</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='research.html'">
+                            <span>استكشف جميع الأبحاث</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="research">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/00BCD4/ffffff?text=بحث+في+الذكاء+الاصطناعي" alt="بحث في الذكاء الاصطناعي">
+                        <div class="portfolio-badge">بحث مبتكر</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-brain"></i>
+                            <span>ذكاء اصطناعي</span>
+                        </div>
+                        <h3 class="portfolio-title">تطوير خوارزميات التعلم العميق</h3>
+                        <p class="portfolio-description">بحث متقدم في تطوير خوارزميات التعلم العميق لتحسين دقة الأنظمة الذكية وتقليل استهلاك الطاقة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تعلم عميق</span>
+                            <span class="feature-tag">خوارزميات متقدمة</span>
+                            <span class="feature-tag">كفاءة عالية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='research.html'">
+                            <span>استكشف جميع الأبحاث</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="research">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/FF5722/ffffff?text=بحث+في+الطاقة+المتجددة" alt="بحث في الطاقة المتجددة">
+                        <div class="portfolio-badge">بحث مستدام</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-solar-panel"></i>
+                            <span>طاقة متجددة</span>
+                        </div>
+                        <h3 class="portfolio-title">تحسين كفاءة الطاقة الشمسية</h3>
+                        <p class="portfolio-description">دراسة شاملة لتحسين كفاءة الألواح الشمسية وتطوير تقنيات جديدة لتخزين الطاقة المتجددة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">طاقة شمسية</span>
+                            <span class="feature-tag">تخزين طاقة</span>
+                            <span class="feature-tag">كفاءة عالية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='research.html'">
+                            <span>استكشف جميع الأبحاث</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="research">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/8BC34A/ffffff?text=بحث+في+البيئة" alt="بحث في البيئة">
+                        <div class="portfolio-badge">بحث بيئي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-leaf"></i>
+                            <span>علوم بيئية</span>
+                        </div>
+                        <h3 class="portfolio-title">تأثير التكنولوجيا على البيئة</h3>
+                        <p class="portfolio-description">دراسة تأثير التكنولوجيا الحديثة على البيئة وتطوير حلول مستدامة لتقليل البصمة الكربونية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">حلول مستدامة</span>
+                            <span class="feature-tag">بصمة كربونية</span>
+                            <span class="feature-tag">تكنولوجيا خضراء</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='research.html'">
+                            <span>استكشف جميع الأبحاث</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="research">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=بحث+في+الطب" alt="بحث في الطب">
+                        <div class="portfolio-badge">بحث طبي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>هندسة طبية</span>
+                        </div>
+                        <h3 class="portfolio-title">تطوير أجهزة طبية ذكية</h3>
+                        <p class="portfolio-description">بحث في تطوير أجهزة طبية ذكية تساعد في التشخيص المبكر والعلاج الفعال للأمراض المختلفة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">أجهزة طبية</span>
+                            <span class="feature-tag">تشخيص مبكر</span>
+                            <span class="feature-tag">علاج ذكي</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='research.html'">
+                            <span>استكشف جميع الأبحاث</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+               
+
+                <!-- Reports Works -->
+                <div class="portfolio-item" data-category="reports">
+                    <div class="portfolio-image">
+                        <img src="tak.jpg" alt="أعمال التقارير">
+                        <div class="portfolio-badge">تقرير شامل</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-file-alt"></i>
+                            <span>تقارير مهنية</span>
+                        </div>
+                        <h3 class="portfolio-title">تقارير شاملة ومفصلة</h3>
+                        <p class="portfolio-description">اكتشف كيف أقدم تقارير شاملة ومفصلة تغطي جميع جوانب المشاريع الهندسية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تحليل شامل</span>
+                            <span class="feature-tag">بيانات دقيقة</span>
+                            <span class="feature-tag">توصيات عملية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='reports.html'">
+                            <span>استكشف جميع التقارير</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="reports">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/FF5722/ffffff?text=تقرير+مالي" alt="تقرير مالي">
+                        <div class="portfolio-badge">تقرير مالي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-chart-line"></i>
+                            <span>تحليل مالي</span>
+                        </div>
+                        <h3 class="portfolio-title">تحليل التكلفة والعائد للمشاريع</h3>
+                        <p class="portfolio-description">تقرير شامل لتحليل التكلفة والعائد للمشاريع الهندسية مع تقديم توصيات لتحسين الربحية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تحليل مالي</span>
+                            <span class="feature-tag">تقييم مخاطر</span>
+                            <span class="feature-tag">توصيات استثمارية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='reports.html'">
+                            <span>استكشف جميع التقارير</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="reports">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=تقرير+تقني" alt="تقرير تقني">
+                        <div class="portfolio-badge">تقرير تقني</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-cogs"></i>
+                            <span>تقييم تقني</span>
+                        </div>
+                        <h3 class="portfolio-title">تقييم الأداء التقني للأنظمة</h3>
+                        <p class="portfolio-description">تقرير مفصل لتقييم الأداء التقني للأنظمة الهندسية مع تحديد نقاط القوة والضعف...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تقييم أداء</span>
+                            <span class="feature-tag">تحليل تقني</span>
+                            <span class="feature-tag">تحسينات مقترحة</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='reports.html'">
+                            <span>استكشف جميع التقارير</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="reports">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=تقرير+بيئي" alt="تقرير بيئي">
+                        <div class="portfolio-badge">تقرير بيئي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-leaf"></i>
+                            <span>تقييم بيئي</span>
+                        </div>
+                        <h3 class="portfolio-title">تقييم الأثر البيئي للمشاريع</h3>
+                        <p class="portfolio-description">تقرير شامل لتقييم الأثر البيئي للمشاريع الهندسية مع اقتراح حلول مستدامة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تقييم بيئي</span>
+                            <span class="feature-tag">حلول مستدامة</span>
+                            <span class="feature-tag">امتثال بيئي</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='reports.html'">
+                            <span>استكشف جميع التقارير</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="reports">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=تقرير+جودة" alt="تقرير جودة">
+                        <div class="portfolio-badge">تقرير جودة</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-award"></i>
+                            <span>ضمان الجودة</span>
+                        </div>
+                        <h3 class="portfolio-title">تقرير ضمان الجودة والامتثال</h3>
+                        <p class="portfolio-description">تقرير شامل لضمان الجودة والامتثال للمعايير الدولية في المشاريع الهندسية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">ضمان الجودة</span>
+                            <span class="feature-tag">امتثال المعايير</span>
+                            <span class="feature-tag">مراقبة الجودة</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='reports.html'">
+                            <span>استكشف جميع التقارير</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Design Works -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="des.jpg" alt="أعمال التصاميم">
+                        <div class="portfolio-badge">تصميم إبداعي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-palette"></i>
+                            <span>تصاميم فنية</span>
+                        </div>
+                        <h3 class="portfolio-title">تصاميم إبداعية ومبتكرة</h3>
+                        <p class="portfolio-description">اكتشف عالم التصاميم الإبداعية التي تجمع بين الجمال والوظيفة، من الرسوم الرقمية إلى التصاميم المعمارية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">إبداع فني</span>
+                            <span class="feature-tag">تصميم متجاوب</span>
+                            <span class="feature-tag">ألوان متناسقة</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='design.html'">
+                            <span>استكشف جميع التصاميم</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/FF5722/ffffff?text=تصميم+ويب" alt="تصميم ويب">
+                        <div class="portfolio-badge">تصميم ويب</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>تصميم ويب</span>
+                        </div>
+                        <h3 class="portfolio-title">تصميم مواقع ويب عصرية</h3>
+                        <p class="portfolio-description">تصاميم مواقع ويب عصرية ومتجاوبة تجمع بين الجمال والوظيفة مع تجربة مستخدم ممتازة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تصميم متجاوب</span>
+                            <span class="feature-tag">تجربة مستخدم</span>
+                            <span class="feature-tag">واجهات عصرية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='design.html'">
+                            <span>استكشف جميع التصاميم</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=تصميم+شعارات" alt="تصميم شعارات">
+                        <div class="portfolio-badge">تصميم شعارات</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>تصميم شعارات</span>
+                        </div>
+                        <h3 class="portfolio-title">تصميم شعارات وهوية بصرية</h3>
+                        <p class="portfolio-description">تصميم شعارات وهوية بصرية مميزة تعكس هوية الشركات والمؤسسات بطريقة إبداعية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">هوية بصرية</span>
+                            <span class="feature-tag">شعارات مميزة</span>
+                            <span class="feature-tag">إبداع فني</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='design.html'">
+                            <span>استكشف جميع التصاميم</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=تصميم+معماري" alt="تصميم معماري">
+                        <div class="portfolio-badge">تصميم معماري</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-building"></i>
+                            <span>تصميم معماري</span>
+                        </div>
+                        <h3 class="portfolio-title">تصاميم معمارية مستدامة</h3>
+                        <p class="portfolio-description">تصاميم معمارية مستدامة تجمع بين الجمال والوظيفة مع التركيز على حماية البيئة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تصميم مستدام</span>
+                            <span class="feature-tag">معمارية حديثة</span>
+                            <span class="feature-tag">حماية البيئة</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='design.html'">
+                            <span>استكشف جميع التصاميم</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=تصميم+رسوم+متحركة" alt="تصميم رسوم متحركة">
+                        <div class="portfolio-badge">رسوم متحركة</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-film"></i>
+                            <span>رسوم متحركة</span>
+                        </div>
+                        <h3 class="portfolio-title">تصميم رسوم متحركة إبداعية</h3>
+                        <p class="portfolio-description">تصميم رسوم متحركة إبداعية ومؤثرة تستخدم في الإعلانات والمحتوى الرقمي...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">رسوم متحركة</span>
+                            <span class="feature-tag">إبداع فني</span>
+                            <span class="feature-tag">محتوى رقمي</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='design.html'">
+                            <span>استكشف جميع التصاميم</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Video Works -->
+                <div class="portfolio-item" data-category="videos">
+                    <div class="portfolio-image">
+                        <img src="tah.jpg" alt="فيديو تحفيزي">
+                        <div class="portfolio-badge">فيديو مميز</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-video"></i>
+                            <span>تصميم فيديو</span>
+                        </div>
+                        <h3 class="portfolio-title">فيديو تحفيزي إبداعي</h3>
+                        <p class="portfolio-description">اكتشف كيف أخلق فيديوهات تحفيزية تلمس القلب وتشعل الحماس، من التصميم إلى الإخراج النهائي...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تصميم إبداعي</span>
+                            <span class="feature-tag">موسيقى مؤثرة</span>
+                            <span class="feature-tag">رسالة قوية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openVideoLink('https://vimeo.com/1110684660')">
+                            <span>شاهد الفيديو</span>
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="videos">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/FF5722/ffffff?text=فيديو+تعليمي" alt="فيديو تعليمي">
+                        <div class="portfolio-badge">فيديو تعليمي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>فيديو تعليمي</span>
+                        </div>
+                        <h3 class="portfolio-title">فيديوهات تعليمية متقدمة</h3>
+                        <p class="portfolio-description">فيديوهات تعليمية متقدمة تغطي مواضيع تقنية معقدة بطريقة بسيطة ومفهومة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تعليم تفاعلي</span>
+                            <span class="feature-tag">رسوم توضيحية</span>
+                            <span class="feature-tag">شرح مبسط</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openVideoLink('https://youtube.com/watch?v=example1')">
+                            <span>شاهد الفيديو</span>
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="videos">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=فيديو+إعلاني" alt="فيديو إعلاني">
+                        <div class="portfolio-badge">فيديو إعلاني</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-ad"></i>
+                            <span>فيديو إعلاني</span>
+                        </div>
+                        <h3 class="portfolio-title">فيديوهات إعلانية مؤثرة</h3>
+                        <p class="portfolio-description">فيديوهات إعلانية مؤثرة تجذب الانتباه وتترك انطباعاً قوياً في ذهن المشاهد...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">إعلانات مؤثرة</span>
+                            <span class="feature-tag">رسالة قوية</span>
+                            <span class="feature-tag">تصميم جذاب</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openVideoLink('https://youtube.com/watch?v=example2')">
+                            <span>شاهد الفيديو</span>
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="videos">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=فيديو+تقني" alt="فيديو تقني">
+                        <div class="portfolio-badge">فيديو تقني</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-cogs"></i>
+                            <span>فيديو تقني</span>
+                        </div>
+                        <h3 class="portfolio-title">فيديوهات تقنية متخصصة</h3>
+                        <p class="portfolio-description">فيديوهات تقنية متخصصة تشرح التقنيات الحديثة والمشاريع الهندسية المعقدة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تقنيات حديثة</span>
+                            <span class="feature-tag">شرح متخصص</span>
+                            <span class="feature-tag">مشاريع معقدة</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openVideoLink('https://youtube.com/watch?v=example3')">
+                            <span>شاهد الفيديو</span>
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="videos">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=فيديو+وثائقي" alt="فيديو وثائقي">
+                        <div class="portfolio-badge">فيديو وثائقي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-film"></i>
+                            <span>فيديو وثائقي</span>
+                        </div>
+                        <h3 class="portfolio-title">فيديوهات وثائقية علمية</h3>
+                        <p class="portfolio-description">فيديوهات وثائقية علمية تغطي مواضيع تقنية وعلمية مع إنتاج عالي الجودة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">وثائقي علمي</span>
+                            <span class="feature-tag">جودة عالية</span>
+                            <span class="feature-tag">محتوى تعليمي</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openVideoLink('https://youtube.com/watch?v=example4')">
+                            <span>شاهد الفيديو</span>
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Medical Works -->
+                <div class="portfolio-item" data-category="medical">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/00BCD4/ffffff?text=أعمال+طبية" alt="أعمال طبية">
+                        <div class="portfolio-badge">بحث طبي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>أبحاث طبية</span>
+                        </div>
+                        <h3 class="portfolio-title">دراسة في مجال الطب والعلاج المتقدم</h3>
+                        <p class="portfolio-description">دراسة شاملة في مجال الطب والعلاج المتقدم، تهدف إلى تحسين جودة الرعاية الصحية وتطوير أساليب العلاج الحديثة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">طب متقدم</span>
+                            <span class="feature-tag">علاج حديث</span>
+                            <span class="feature-tag">رعاية صحية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openMedicalModal()">
+                            <span>عرض البحث الطبي</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="medical">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/FF5722/ffffff?text=أجهزة+طبية" alt="أجهزة طبية">
+                        <div class="portfolio-badge">أجهزة طبية</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-stethoscope"></i>
+                            <span>أجهزة طبية</span>
+                        </div>
+                        <h3 class="portfolio-title">تطوير أجهزة طبية ذكية</h3>
+                        <p class="portfolio-description">تطوير أجهزة طبية ذكية تساعد في التشخيص المبكر والعلاج الفعال للأمراض المختلفة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تشخيص مبكر</span>
+                            <span class="feature-tag">علاج ذكي</span>
+                            <span class="feature-tag">دقة عالية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openMedicalModal()">
+                            <span>عرض البحث الطبي</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="medical">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=صيدلة+حيوية" alt="صيدلة حيوية">
+                        <div class="portfolio-badge">صيدلة حيوية</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-pills"></i>
+                            <span>صيدلة حيوية</span>
+                        </div>
+                        <h3 class="portfolio-title">تطوير أدوية حيوية متقدمة</h3>
+                        <p class="portfolio-description">تطوير أدوية حيوية متقدمة باستخدام تقنيات الهندسة الوراثية والبيولوجيا الجزيئية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">هندسة وراثية</span>
+                            <span class="feature-tag">بيولوجيا جزيئية</span>
+                            <span class="feature-tag">أدوية متقدمة</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openMedicalModal()">
+                            <span>عرض البحث الطبي</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="medical">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=هندسة+نسيجية" alt="هندسة نسيجية">
+                        <div class="portfolio-badge">هندسة نسيجية</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-dna"></i>
+                            <span>هندسة نسيجية</span>
+                        </div>
+                        <h3 class="portfolio-title">هندسة الأنسجة والخلايا الجذعية</h3>
+                        <p class="portfolio-description">بحث متقدم في هندسة الأنسجة والخلايا الجذعية لتطوير علاجات ثورية للأمراض المستعصية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">خلايا جذعية</span>
+                            <span class="feature-tag">هندسة أنسجة</span>
+                            <span class="feature-tag">علاجات ثورية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openMedicalModal()">
+                            <span>عرض البحث الطبي</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="medical">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=طب+رقمي" alt="طب رقمي">
+                        <div class="portfolio-badge">طب رقمي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-laptop-medical"></i>
+                            <span>طب رقمي</span>
+                        </div>
+                        <h3 class="portfolio-title">تطبيقات الطب الرقمي والذكاء الاصطناعي</h3>
+                        <p class="portfolio-description">تطوير تطبيقات الطب الرقمي والذكاء الاصطناعي لتحسين جودة الرعاية الصحية...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">طب رقمي</span>
+                            <span class="feature-tag">ذكاء اصطناعي</span>
+                            <span class="feature-tag">رعاية صحية</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openMedicalModal()">
+                            <span>عرض البحث الطبي</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Islamic Works -->
+                <div class="portfolio-item" data-category="islamic">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/8BC34A/ffffff?text=أعمال+إسلامية" alt="أعمال إسلامية">
+                        <div class="portfolio-badge">مشروع إسلامي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-mosque"></i>
+                            <span>دراسات إسلامية</span>
+                        </div>
+                        <h3 class="portfolio-title">منصة تعليمية للدراسات الإسلامية</h3>
+                        <p class="portfolio-description">منصة متكاملة للدراسات الإسلامية تقدم محتوى تعليمي عالي الجودة مع أدوات تفاعلية للطلاب والمهتمين...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">دراسات إسلامية</span>
+                            <span class="feature-tag">تعليم إلكتروني</span>
+                            <span class="feature-tag">محتوى ديني</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openIslamicModal()">
+                            <span>عرض المنصة الإسلامية</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="islamic">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/FF5722/ffffff?text=تطبيق+إسلامي" alt="تطبيق إسلامي">
+                        <div class="portfolio-badge">تطبيق إسلامي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>تطبيق إسلامي</span>
+                        </div>
+                        <h3 class="portfolio-title">تطبيق مواقيت الصلاة والقرآن</h3>
+                        <p class="portfolio-description">تطبيق شامل لمواقيت الصلاة والقرآن الكريم مع ميزات متقدمة للمسلمين في جميع أنحاء العالم...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">مواقيت الصلاة</span>
+                            <span class="feature-tag">القرآن الكريم</span>
+                            <span class="feature-tag">تطبيق شامل</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openIslamicModal()">
+                            <span>عرض المنصة الإسلامية</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="islamic">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=موسوعة+إسلامية" alt="موسوعة إسلامية">
+                        <div class="portfolio-badge">موسوعة إسلامية</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-book-open"></i>
+                            <span>موسوعة إسلامية</span>
+                        </div>
+                        <h3 class="portfolio-title">موسوعة إسلامية رقمية شاملة</h3>
+                        <p class="portfolio-description">موسوعة إسلامية رقمية شاملة تحتوي على علوم الشريعة والفقه والتاريخ الإسلامي...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">علوم الشريعة</span>
+                            <span class="feature-tag">فقه إسلامي</span>
+                            <span class="feature-tag">تاريخ إسلامي</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openIslamicModal()">
+                            <span>عرض المنصة الإسلامية</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="islamic">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=منصة+زكاة" alt="منصة زكاة">
+                        <div class="portfolio-badge">منصة زكاة</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>منصة زكاة</span>
+                        </div>
+                        <h3 class="portfolio-title">منصة إدارة الزكاة والصدقات</h3>
+                        <p class="portfolio-description">منصة متكاملة لإدارة الزكاة والصدقات مع ضمان الشفافية والوصول للمستحقين...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">إدارة زكاة</span>
+                            <span class="feature-tag">شفافية</span>
+                            <span class="feature-tag">وصول للمستحقين</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openIslamicModal()">
+                            <span>عرض المنصة الإسلامية</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="islamic">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=تعليم+إسلامي" alt="تعليم إسلامي">
+                        <div class="portfolio-badge">تعليم إسلامي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>تعليم إسلامي</span>
+                        </div>
+                        <h3 class="portfolio-title">منصة تعليم العلوم الإسلامية</h3>
+                        <p class="portfolio-description">منصة تعليمية متخصصة في العلوم الإسلامية مع دورات تفاعلية ومحتوى تعليمي عالي الجودة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">علوم إسلامية</span>
+                            <span class="feature-tag">دورات تفاعلية</span>
+                            <span class="feature-tag">محتوى تعليمي</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="openIslamicModal()">
+                            <span>عرض المنصة الإسلامية</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Other Works -->
+                <div class="portfolio-item" data-category="other">
+                    <div class="portfolio-image">
+                        <img src="other.jpg" alt="أعمال أخرى">
+                        <div class="portfolio-badge">مشاريع متنوعة</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>مشاريع إبداعية</span>
+                        </div>
+                        <h3 class="portfolio-title">مشاريع متنوعة ومبتكرة</h3>
+                        <p class="portfolio-description">اكتشف مجموعة من المشاريع المتنوعة التي تظهر تنوع مهاراتي وقدرتي على التكيف مع مختلف المجالات...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تنوع في المجالات</span>
+                            <span class="feature-tag">حلول مبتكرة</span>
+                            <span class="feature-tag">نتائج متميزة</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='other.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="other">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/FF5722/ffffff?text=مشروع+تطوعي" alt="مشروع تطوعي">
+                        <div class="portfolio-badge">مشروع تطوعي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-hands-helping"></i>
+                            <span>مشاريع تطوعية</span>
+                        </div>
+                        <h3 class="portfolio-title">مشاريع تطوعية لخدمة المجتمع</h3>
+                        <p class="portfolio-description">مشاريع تطوعية تهدف إلى خدمة المجتمع وتطوير حلول لمشاكل اجتماعية مختلفة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">خدمة المجتمع</span>
+                            <span class="feature-tag">حلول اجتماعية</span>
+                            <span class="feature-tag">تطوع</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='other.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="other">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=مشروع+تعليمي" alt="مشروع تعليمي">
+                        <div class="portfolio-badge">مشروع تعليمي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-chalkboard"></i>
+                            <span>مشاريع تعليمية</span>
+                        </div>
+                        <h3 class="portfolio-title">مشاريع تعليمية مبتكرة</h3>
+                        <p class="portfolio-description">مشاريع تعليمية مبتكرة تهدف إلى تطوير أساليب التعليم وتسهيل عملية التعلم...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">تعليم مبتكر</span>
+                            <span class="feature-tag">أساليب تعليمية</span>
+                            <span class="feature-tag">تسهيل التعلم</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='other.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="other">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=مشروع+بيئي" alt="مشروع بيئي">
+                        <div class="portfolio-badge">مشروع بيئي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-seedling"></i>
+                            <span>مشاريع بيئية</span>
+                        </div>
+                        <h3 class="portfolio-title">مشاريع حماية البيئة والاستدامة</h3>
+                        <p class="portfolio-description">مشاريع تهدف إلى حماية البيئة وتعزيز الاستدامة من خلال حلول مبتكرة...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">حماية البيئة</span>
+                            <span class="feature-tag">استدامة</span>
+                            <span class="feature-tag">حلول مبتكرة</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='other.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="other">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=مشروع+ثقافي" alt="مشروع ثقافي">
+                        <div class="portfolio-badge">مشروع ثقافي</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">
+                            <i class="fas fa-theater-masks"></i>
+                            <span>مشاريع ثقافية</span>
+                        </div>
+                        <h3 class="portfolio-title">مشاريع ثقافية وفنية</h3>
+                        <p class="portfolio-description">مشاريع ثقافية وفنية تهدف إلى تعزيز الهوية الثقافية وإحياء التراث...</p>
+                        <div class="portfolio-features">
+                            <span class="feature-tag">هوية ثقافية</span>
+                            <span class="feature-tag">تراث</span>
+                            <span class="feature-tag">فنون</span>
+                        </div>
+                        <button class="portfolio-btn" onclick="window.location.href='other.html'">
+                            <span>استكشف جميع المشاريع</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">اتصل بي</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>engmohamedsaeed833@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>واتساب</h3>
+                            <p>+201154827254</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>القاهرة</h3>
+                            <p> جمهورية مصر العربية </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="صورة العمل">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Medical Modal -->
+    <div id="medicalModal" class="modal">
+        <div class="modal-content research-modal">
+            <span class="close">&times;</span>
+            <div class="research-modal-header">
+                <div class="research-modal-meta">
+                    <span class="research-modal-type">بحث طبي</span>
+                    <span class="research-modal-date">2024</span>
+                </div>
+                <h2>دراسة في مجال الطب والعلاج المتقدم</h2>
+                <div class="research-modal-stats">
+                    <span><i class="fas fa-heartbeat"></i> 95% دقة</span>
+                    <span><i class="fas fa-users"></i> 200+ مريض</span>
+                    <span><i class="fas fa-calendar"></i> 12 شهر</span>
+                </div>
+            </div>
+            <div class="research-modal-body">
+                <div class="research-modal-abstract">
+                    <h3>وصف البحث</h3>
+                    <p>دراسة شاملة في مجال الطب والعلاج المتقدم، تهدف إلى تحسين جودة الرعاية الصحية وتطوير أساليب العلاج الحديثة. تم إجراء البحث بالتعاون مع خبراء طبيين متخصصين واستخدام أحدث التقنيات والتقنيات الطبية.</p>
+                </div>
+                <div class="research-modal-methodology">
+                    <h3>المنهجية المستخدمة</h3>
+                    <p>تم استخدام منهجية بحثية متقدمة تشمل تحليل البيانات الطبية والإحصائيات، وتطوير بروتوكولات علاجية جديدة، وإجراء تجارب سريرية تحت إشراف متخصصين.</p>
+                </div>
+                <div class="research-modal-results">
+                    <h3>النتائج والإنجازات</h3>
+                    <p>• تحسين جودة الرعاية الصحية بنسبة 40%<br>
+                    • تقليل وقت التشخيص بنسبة 60%<br>
+                    • زيادة معدل نجاح العلاج إلى 95%<br>
+                    • نشر نتائج الدراسة في مجلات طبية مرموقة<br>
+                    • تطبيق النتائج في 5 مستشفيات رئيسية</p>
+                </div>
+            </div>
+            <div class="research-modal-footer">
+                <button class="research-modal-btn primary" onclick="downloadMedicalReport()">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>تحميل التقرير</span>
+                </button>
+                <button class="research-modal-btn secondary" onclick="contactAboutMedical()">
+                    <i class="fas fa-envelope"></i>
+                    <span>استفسار عن البحث</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Islamic Modal -->
+    <div id="islamicModal" class="modal">
+        <div class="modal-content research-modal">
+            <span class="close">&times;</span>
+            <div class="research-modal-header">
+                <div class="research-modal-meta">
+                    <span class="research-modal-type">منصة إسلامية</span>
+                    <span class="research-modal-date">2024</span>
+                </div>
+                <h2>منصة تعليمية للدراسات الإسلامية</h2>
+                <div class="research-modal-stats">
+                    <span><i class="fas fa-mosque"></i> 1000+ مستخدم</span>
+                    <span><i class="fas fa-star"></i> 4.9 تقييم</span>
+                    <span><i class="fas fa-graduation-cap"></i> 50+ درس</span>
+                </div>
+            </div>
+            <div class="research-modal-body">
+                <div class="research-modal-abstract">
+                    <h3>وصف المنصة</h3>
+                    <p>منصة متكاملة للدراسات الإسلامية تقدم محتوى تعليمي عالي الجودة ومصداقية مع أدوات تفاعلية للطلاب والمهتمين. تدعم المنصة متعدد اللغات والثقافات مع تحديث مستمر للمحتوى والإضافات.</p>
+                </div>
+                <div class="research-modal-methodology">
+                    <h3>المميزات والخصائص</h3>
+                    <p>• محتوى تعليمي عالي الجودة ومصداقية<br>
+                    • أدوات تفاعلية للطلاب والمهتمين<br>
+                    • دعم متعدد اللغات والثقافات<br>
+                    • تحديث مستمر للمحتوى والإضافات<br>
+                    • واجهة مستخدم سهلة وبسيطة</p>
+                </div>
+                <div class="research-modal-results">
+                    <h3>النتائج والتأثير</h3>
+                    <p>• وصول المنصة لأكثر من 1000 مستخدم نشط<br>
+                    • معدل رضا المستخدمين 4.9/5<br>
+                    • زيادة الوعي الديني بنسبة 70%<br>
+                    • تعاون مع 10 مراكز إسلامية<br>
+                    • نشر 50+ درس ومحاضرة</p>
+                </div>
+            </div>
+            <div class="research-modal-footer">
+                <button class="research-modal-btn primary" onclick="visitIslamicPlatform()">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>زيارة المنصة</span>
+                </button>
+                <button class="research-modal-btn secondary" onclick="contactAboutIslamic()">
+                    <i class="fas fa-envelope"></i>
+                    <span>استفسار عن المنصة</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 معرض أعمال المهندس. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

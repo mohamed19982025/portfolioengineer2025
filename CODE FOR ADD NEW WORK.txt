@@ -1,0 +1,190 @@
+
+<div class="portfolio-item" data-category="engineering">
+    <div class="portfolio-image">
+        <img src="صورة_عملك.jpg" alt="وصف الصورة">
+        <div class="portfolio-overlay">
+            <h3>عنوان عملك</h3>
+            <p>وصف تفصيلي للعمل</p>
+            <button class="view-btn" onclick="openModal(this)">
+                <i class="fas fa-eye"></i>
+            </button>
+        </div>
+    </div>
+</div>
+--------------------------------------------------------------------
+التعديل في اندكس
+<!-- Filter Buttons -->
+<div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">جميع الأعمال</button>
+    <button class="filter-btn" data-filter="engineering">أعمال الهندسة</button>
+    <button class="filter-btn" data-filter="research">أعمال الأبحاث</button>
+    <button class="filter-btn" data-filter="reports">أعمال التقارير</button>
+    <button class="filter-btn" data-filter="design">أعمال التصاميم</button>
+    <button class="filter-btn" data-filter="medical">أعمال طبية</button>
+    <button class="filter-btn" data-filter="islamic">أعمال إسلامية</button>
+    <button class="filter-btn" data-filter="other">أعمال أخرى</button>
+</div>
+----------------------------------------------------------------------
+<!-- Medical Works -->
+<div class="portfolio-item" data-category="medical">
+    <div class="portfolio-image">
+        <img src="https://via.placeholder.com/400x300/00BCD4/ffffff?text=أعمال+طبية" alt="أعمال طبية">
+        <div class="portfolio-overlay">
+            <h3>بحث طبي</h3>
+            <p>دراسة في مجال الطب والعلاج</p>
+            <button class="view-btn" onclick="openModal(this)">
+                <i class="fas fa-eye"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Islamic Works -->
+<div class="portfolio-item" data-category="islamic">
+    <div class="portfolio-image">
+        <img src="https://via.placeholder.com/400x300/8BC34A/ffffff?text=أعمال+إسلامية" alt="أعمال إسلامية">
+        <div class="portfolio-overlay">
+            <h3>مشروع إسلامي</h3>
+            <p>أعمال في مجال الدراسات الإسلامية</p>
+            <button class="view-btn" onclick="openModal(this)">
+                <i class="fas fa-eye"></i>
+            </button>
+        </div>
+    </div>
+</div>
+----------------------------------------------------------------------
+التعديل في ستايل 
+/* ألوان مخصصة للأقسام الجديدة */
+.portfolio-item[data-category="medical"] .portfolio-overlay {
+    background: rgba(0, 188, 212, 0.9); /* أزرق طبي */
+}
+
+.portfolio-item[data-category="islamic"] .portfolio-overlay {
+    background: rgba(139, 195, 74, 0.9); /* أخضر إسلامي */
+}
+-----------------------------------------------------------------------
+اضافة فيديو يوتيوب 
+<div class="portfolio-item" data-category="engineering">
+    <div class="portfolio-image">
+        <!-- فيديو YouTube -->
+        <iframe 
+            width="100%" 
+            height="250" 
+            src="https://www.youtube.com/embed/VIDEO_ID" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+        <div class="portfolio-overlay">
+            <h3>مشروع هندسي</h3>
+            <p>فيديو توضيحي للمشروع</p>
+            <button class="view-btn" onclick="openModal(this)">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+    </div>
+</div>
+-----------------------------------------------------------------
+اضافة فيد محلي 
+<div class="portfolio-item" data-category="research">
+    <div class="portfolio-image">
+        <video width="100%" height="250" controls>
+            <source src="tahfez1.mp4" type="video/mp4">
+            <source src="فيديو_عملي.webm" type="video/webm">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+        <div class="portfolio-overlay">
+            <h3>بحث علمي</h3>
+            <p>فيديو توضيحي للبحث</p>
+            <button class="view-btn" onclick="openModal(this)">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+    </div>
+</div>
+-------------------------------------------------------------------
+صورة مع فيد منبثق 
+<div class="portfolio-item" data-category="design">
+    <div class="portfolio-image">
+        <!-- صورة مصغرة للفيديو -->
+        <img src="صورة_مصغرة_للفيديو.jpg" alt="تصميم إبداعي">
+        <div class="portfolio-overlay">
+            <h3>تصميم إبداعي</h3>
+            <p>فيديو توضيحي للتصميم</p>
+            <button class="view-btn" onclick="openVideoModal(this, 'فيديو_التصميم.mp4')">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+    </div>
+</div>
+-------------------------------------------------------------
+لدعم الفيديو تعديل سكربت
+// دالة فتح نافذة الفيديو
+function openVideoModal(button, videoSrc) {
+    const portfolioItem = button.closest('.portfolio-item');
+    const title = portfolioItem.querySelector('h3').textContent;
+    const description = portfolioItem.querySelector('p').textContent;
+    
+    // إنشاء محتوى الفيديو
+    const modalContent = `
+        <span class="close">&times;</span>
+        <video width="100%" height="auto" controls>
+            <source src="${videoSrc}" type="video/mp4">
+            <source src="${videoSrc.replace('.mp4', '.webm')}" type="video/webm">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+        <div class="modal-info">
+            <h3>${title}</h3>
+            <p>${description}</p>
+        </div>
+    `;
+    
+    // عرض النافذة المنبثقة
+    const modal = document.getElementById('imageModal');
+    const modalContentDiv = modal.querySelector('.modal-content');
+    modalContentDiv.innerHTML = modalContent;
+    
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    
+    // إغلاق النافذة
+    const closeBtn = modal.querySelector('.close');
+    closeBtn.onclick = () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    };
+}
+--------------------------------------------------------------------
+لدعم الفيد عدل css  
+/* أنماط الفيديو */
+.portfolio-image video,
+.portfolio-image iframe {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* زر تشغيل الفيديو */
+.portfolio-overlay .view-btn[onclick*="openVideoModal"] {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.portfolio-overlay .view-btn[onclick*="openVideoModal"]:hover {
+    background-color: #ff5252;
+    transform: scale(1.1);
+}
+
+/* نافذة الفيديو المنبثقة */
+.modal-content video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+------------------------------------------------------------------

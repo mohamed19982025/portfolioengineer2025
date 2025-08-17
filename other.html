@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمال أخرى - معرض أعمال المهندس</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-briefcase"></i>
+                <a href="index.html" style="color: white; text-decoration: none;">معرض أعمالي</a>
+            </h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="research.html" class="nav-link">الأبحاث</a></li>
+                    <li><a href="engineering.html" class="nav-link">الهندسة</a></li>
+                    <li><a href="design.html" class="nav-link">التصاميم</a></li>
+                    <li><a href="reports.html" class="nav-link">التقارير</a></li>
+                    <li><a href="other.html" class="nav-link active">أعمال أخرى</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">أعمال متنوعة ومبتكرة</h1>
+                <p class="page-hero-subtitle">اكتشف مجموعة من المشاريع المتنوعة التي تظهر تنوع مهاراتي وقدرتي على التكيف مع مختلف المجالات</p>
+                <div class="breadcrumb">
+                    <a href="index.html">الرئيسية</a>
+                    <i class="fas fa-chevron-left"></i>
+                    <span>أعمال أخرى</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Categories -->
+    <section class="research-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-filter active" data-category="all">جميع الأعمال</button>
+                <button class="category-filter" data-category="medical">أعمال طبية</button>
+                <button class="category-filter" data-category="islamic">أعمال إسلامية</button>
+                <button class="category-filter" data-category="creative">أعمال إبداعية</button>
+                <button class="category-filter" data-category="consulting">استشارات مهنية</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Works Grid -->
+    <section class="research-grid-section">
+        <div class="container">
+            <div class="research-grid">
+                <!-- Medical Works -->
+                <div class="research-item" data-category="medical">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/00BCD4/ffffff?text=أعمال+طبية" alt="أعمال طبية">
+                        <div class="research-badge">بحث طبي</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-heartbeat"></i> 95% دقة</span>
+                                <span><i class="fas fa-users"></i> 200+ مريض</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">أعمال طبية</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">دراسة في مجال الطب والعلاج المتقدم</h3>
+                        <p class="research-abstract">دراسة شاملة في مجال الطب والعلاج المتقدم، تهدف إلى تحسين جودة الرعاية الصحية وتطوير أساليب العلاج الحديثة...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">طب متقدم</span>
+                            <span class="research-tag">علاج حديث</span>
+                            <span class="research-tag">رعاية صحية</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openOtherModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض العمل</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadMedicalReport()">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>تحميل التقرير</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Islamic Works -->
+                <div class="research-item" data-category="islamic">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/8BC34A/ffffff?text=أعمال+إسلامية" alt="أعمال إسلامية">
+                        <div class="research-badge">مشروع إسلامي</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-mosque"></i> 1000+ مستخدم</span>
+                                <span><i class="fas fa-star"></i> 4.9 تقييم</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">أعمال إسلامية</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">منصة تعليمية للدراسات الإسلامية</h3>
+                        <p class="research-abstract">منصة متكاملة للدراسات الإسلامية تقدم محتوى تعليمي عالي الجودة مع أدوات تفاعلية للطلاب والمهتمين...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">دراسات إسلامية</span>
+                            <span class="research-tag">تعليم إلكتروني</span>
+                            <span class="research-tag">محتوى ديني</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openOtherModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض العمل</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="visitIslamicPlatform()">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>زيارة المنصة</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creative Works -->
+                <div class="research-item" data-category="creative">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/FF5722/ffffff?text=أعمال+إبداعية" alt="أعمال إبداعية">
+                        <div class="research-badge">إبداع فني</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-palette"></i> 50+ تصميم</span>
+                                <span><i class="fas fa-award"></i> جوائز</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">أعمال إبداعية</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">مجموعة تصاميم إبداعية مبتكرة</h3>
+                        <p class="research-abstract">مجموعة من التصاميم الإبداعية التي تجمع بين الفن والوظيفة، من الرسوم الرقمية إلى التصاميم المعمارية...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">تصميم إبداعي</span>
+                            <span class="research-tag">فن رقمي</span>
+                            <span class="research-tag">معمارية</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openOtherModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض العمل</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="viewCreativeGallery()">
+                                <i class="fas fa-images"></i>
+                                <span>معرض التصاميم</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consulting Works -->
+                <div class="research-item" data-category="consulting">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=استشارات+مهنية" alt="استشارات مهنية">
+                        <div class="research-badge">استشارة متقدمة</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-handshake"></i> 100+ عميل</span>
+                                <span><i class="fas fa-chart-line"></i> 85% نجاح</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">استشارات مهنية</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">خدمات استشارية متخصصة في مجال الهندسة</h3>
+                        <p class="research-abstract">خدمات استشارية متخصصة تقدم حلولاً مبتكرة للمشاريع الهندسية المعقدة، مع ضمان الجودة والكفاءة...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">استشارات هندسية</span>
+                            <span class="research-tag">حلول مبتكرة</span>
+                            <span class="research-tag">ضمان الجودة</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openOtherModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض العمل</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="requestConsultation()">
+                                <i class="fas fa-calendar"></i>
+                                <span>طلب استشارة</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Project -->
+                <div class="research-item" data-category="creative">
+                    <div class="research-image">
+                        <img src="tah.jpg" alt="فيديو تحفيزي">
+                        <div class="research-badge">فيديو مميز</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-play"></i> 50K+ مشاهدة</span>
+                                <span><i class="fas fa-heart"></i> 2K+ إعجاب</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">تصميم فيديو</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">فيديو تحفيزي إبداعي</h3>
+                        <p class="research-abstract">فيديو تحفيزي يلمس القلب ويشعل الحماس، من التصميم إلى الإخراج النهائي، مع رسالة قوية ومؤثرة...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">تصميم إبداعي</span>
+                            <span class="research-tag">موسيقى مؤثرة</span>
+                            <span class="research-tag">رسالة قوية</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openVideoModal(this, 'tahfez1.mp4')">
+                                <i class="fas fa-play"></i>
+                                <span>شاهد الفيديو</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadVideo()">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل الفيديو</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Innovation Project -->
+                <div class="research-item" data-category="creative">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/FF9800/ffffff?text=مشروع+مبتكر" alt="مشروع مبتكر">
+                        <div class="research-badge">مبتكر</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-lightbulb"></i> فكرة جديدة</span>
+                                <span><i class="fas fa-rocket"></i> قيد التطوير</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">مشروع مبتكر</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">مشروع مبتكر لحلول الطاقة المستدامة</h3>
+                        <p class="research-abstract">مشروع مبتكر يهدف إلى تطوير حلول طاقة مستدامة ومتجددة، مع التركيز على الكفاءة والتكلفة المنخفضة...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">طاقة مستدامة</span>
+                            <span class="research-tag">حلول مبتكرة</span>
+                            <span class="research-tag">كفاءة عالية</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openOtherModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض المشروع</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="investInProject()">
+                                <i class="fas fa-coins"></i>
+                                <span>استثمار في المشروع</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Works Modal -->
+    <div id="otherModal" class="modal">
+        <div class="modal-content research-modal">
+            <span class="close">&times;</span>
+            <div class="research-modal-header">
+                <div class="research-modal-meta">
+                    <span class="research-modal-type">عمل متنوع</span>
+                    <span class="research-modal-date">2024</span>
+                </div>
+                <h2 id="otherModalTitle">عنوان العمل</h2>
+                <div class="research-modal-stats">
+                    <span><i class="fas fa-tag"></i> <span id="otherModalCategory">الفئة</span></span>
+                    <span><i class="fas fa-calendar"></i> <span id="otherModalDate">التاريخ</span></span>
+                    <span><i class="fas fa-star"></i> <span id="otherModalRating">التقييم</span></span>
+                </div>
+            </div>
+            <div class="research-modal-body">
+                <div class="research-modal-abstract">
+                    <h3>وصف العمل</h3>
+                    <p id="otherModalDescription">وصف العمل...</p>
+                </div>
+                <div class="research-modal-methodology">
+                    <h3>المميزات والخصائص</h3>
+                    <p id="otherModalFeatures">المميزات والخصائص...</p>
+                </div>
+                <div class="research-modal-results">
+                    <h3>النتائج والتأثير</h3>
+                    <p id="otherModalResults">النتائج والتأثير...</p>
+                </div>
+            </div>
+            <div class="research-modal-footer">
+                <button class="research-modal-btn primary" onclick="contactAboutWork()">
+                    <i class="fas fa-envelope"></i>
+                    <span>استفسار عن العمل</span>
+                </button>
+                <button class="research-modal-btn secondary" onclick="closeOtherModal()">
+                    <i class="fas fa-times"></i>
+                    <span>إغلاق</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 معرض أعمال المهندس. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="other-script.js"></script>
+</body>
+</html>
+

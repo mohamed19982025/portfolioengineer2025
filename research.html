@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمال الأبحاث - معرض أعمال المهندس</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-briefcase"></i>
+                <a href="index.html" style="color: white; text-decoration: none;">معرض أعمالي</a>
+            </h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="research.html" class="nav-link active">الأبحاث</a></li>
+                    <li><a href="engineering.html" class="nav-link">الهندسة</a></li>
+                    <li><a href="design.html" class="nav-link">التصاميم</a></li>
+                    <li><a href="contact.html" class="nav-link">اتصل بي</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">أعمال الأبحاث العلمية</h1>
+                <p class="page-hero-subtitle">اكتشف أحدث الأبحاث والدراسات في مجال الهندسة</p>
+                <div class="breadcrumb">
+                    <a href="index.html">الرئيسية</a>
+                    <i class="fas fa-chevron-left"></i>
+                    <span>الأبحاث</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Categories -->
+    <section class="research-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-filter active" data-category="all">جميع الأبحاث</button>
+                <button class="category-filter" data-category="engineering-research">أبحاث هندسية</button>
+                <button class="category-filter" data-category="technology-research">أبحاث تقنية</button>
+                <button class="category-filter" data-category="innovation-research">أبحاث الابتكار</button>
+                <button class="category-filter" data-category="sustainability-research">أبحاث الاستدامة</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Grid -->
+    <section class="research-grid-section">
+        <div class="container">
+            <div class="research-grid">
+                <!-- Research Item 1 -->
+                <div class="research-item" data-category="engineering-research">
+                    <div class="research-image">
+                        <img src="bahs.jpg" alt="بحث في الهندسة الميكانيكية">
+                        <div class="research-badge">بحث منشور</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-quote-left"></i> 15 اقتباس</span>
+                                <span><i class="fas fa-download"></i> 45 تحميل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">بحث علمي</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">تطوير أنظمة التبريد المتقدمة في المحركات</h3>
+                        <p class="research-abstract">دراسة شاملة لتطوير أنظمة تبريد مبتكرة في المحركات الحرارية، مع التركيز على تحسين الكفاءة وتقليل استهلاك الطاقة...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">هندسة ميكانيكية</span>
+                            <span class="research-tag">أنظمة تبريد</span>
+                            <span class="research-tag">كفاءة الطاقة</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openResearchModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>اقرأ البحث</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadResearch('research1.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Item 2 -->
+                <div class="research-item" data-category="technology-research">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=بحث+تقني" alt="بحث في التكنولوجيا">
+                        <div class="research-badge">بحث جديد</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-quote-left"></i> 8 اقتباس</span>
+                                <span><i class="fas fa-download"></i> 23 تحميل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">بحث تقني</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">الذكاء الاصطناعي في إدارة المشاريع الهندسية</h3>
+                        <p class="research-abstract">استكشاف تطبيقات الذكاء الاصطناعي في تحسين إدارة المشاريع الهندسية، مع دراسة حالات عملية من مشاريع حقيقية...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">ذكاء اصطناعي</span>
+                            <span class="research-tag">إدارة مشاريع</span>
+                            <span class="research-tag">هندسة برمجيات</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openResearchModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>اقرأ البحث</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadResearch('research2.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Item 3 -->
+                <div class="research-item" data-category="innovation-research">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=بحث+ابتكاري" alt="بحث في الابتكار">
+                        <div class="research-badge">مبتكر</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-quote-left"></i> 32 اقتباس</span>
+                                <span><i class="fas fa-download"></i> 67 تحميل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">بحث ابتكاري</span>
+                            <span class="research-date">2023</span>
+                        </div>
+                        <h3 class="research-title">تقنيات البناء المستدامة باستخدام المواد المحلية</h3>
+                        <p class="research-abstract">دراسة مبتكرة لتطوير تقنيات بناء مستدامة باستخدام المواد المحلية المتوفرة، مع التركيز على تقليل التكلفة والآثار البيئية...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">بناء مستدام</span>
+                            <span class="research-tag">مواد محلية</span>
+                            <span class="research-tag">هندسة معمارية</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openResearchModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>اقرأ البحث</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadResearch('research3.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Item 4 -->
+                <div class="research-item" data-category="sustainability-research">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/FF9800/ffffff?text=بحث+استدامة" alt="بحث في الاستدامة">
+                        <div class="research-badge">مميز</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-quote-left"></i> 28 اقتباس</span>
+                                <span><i class="fas fa-download"></i> 89 تحميل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">بحث استدامة</span>
+                            <span class="research-date">2023</span>
+                        </div>
+                        <h3 class="research-title">تطوير أنظمة الطاقة المتجددة للمباني الذكية</h3>
+                        <p class="research-abstract">دراسة شاملة لتطوير أنظمة طاقة متجددة متكاملة للمباني الذكية، مع التركيز على كفاءة الطاقة والتكامل مع الشبكات الذكية...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">طاقة متجددة</span>
+                            <span class="research-tag">مباني ذكية</span>
+                            <span class="research-tag">كفاءة الطاقة</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openResearchModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>اقرأ البحث</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadResearch('research4.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Modal -->
+    <div id="researchModal" class="modal">
+        <div class="modal-content research-modal">
+            <span class="close">&times;</span>
+            <div class="research-modal-header">
+                <div class="research-modal-meta">
+                    <span class="research-modal-type">بحث علمي</span>
+                    <span class="research-modal-date">2024</span>
+                </div>
+                <h2 id="researchModalTitle">عنوان البحث</h2>
+                <div class="research-modal-stats">
+                    <span><i class="fas fa-quote-left"></i> <span id="researchModalQuotes">0</span> اقتباس</span>
+                    <span><i class="fas fa-download"></i> <span id="researchModalDownloads">0</span> تحميل</span>
+                    <span><i class="fas fa-eye"></i> <span id="researchModalViews">0</span> مشاهدة</span>
+                </div>
+            </div>
+            <div class="research-modal-body">
+                <div class="research-modal-abstract">
+                    <h3>ملخص البحث</h3>
+                    <p id="researchModalAbstract">محتوى ملخص البحث...</p>
+                </div>
+                <div class="research-modal-methodology">
+                    <h3>المنهجية</h3>
+                    <p id="researchModalMethodology">وصف المنهجية المستخدمة...</p>
+                </div>
+                <div class="research-modal-results">
+                    <h3>النتائج والتوصيات</h3>
+                    <p id="researchModalResults">النتائج والتوصيات...</p>
+                </div>
+            </div>
+            <div class="research-modal-footer">
+                <button class="research-modal-btn primary" onclick="downloadResearch('current-research.pdf')">
+                    <i class="fas fa-download"></i>
+                    <span>تحميل البحث كاملاً</span>
+                </button>
+                <button class="research-modal-btn secondary" onclick="shareResearch()">
+                    <i class="fas fa-share"></i>
+                    <span>مشاركة البحث</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 معرض أعمال المهندس. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="research-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمال التقارير - معرض أعمال المهندس</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-briefcase"></i>
+                <a href="index.html" style="color: white; text-decoration: none;">معرض أعمالي</a>
+            </h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="research.html" class="nav-link">الأبحاث</a></li>
+                    <li><a href="engineering.html" class="nav-link">الهندسة</a></li>
+                    <li><a href="design.html" class="nav-link">التصاميم</a></li>
+                    <li><a href="reports.html" class="nav-link active">التقارير</a></li>
+                    <li><a href="other.html" class="nav-link">أعمال أخرى</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">أعمال التقارير المهنية</h1>
+                <p class="page-hero-subtitle">اكتشف تقارير شاملة ومفصلة تغطي جميع جوانب المشاريع الهندسية</p>
+                <div class="breadcrumb">
+                    <a href="index.html">الرئيسية</a>
+                    <i class="fas fa-chevron-left"></i>
+                    <span>التقارير</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports Categories -->
+    <section class="research-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-filter active" data-category="all">جميع التقارير</button>
+                <button class="category-filter" data-category="technical-reports">تقارير تقنية</button>
+                <button class="category-filter" data-category="feasibility-reports">دراسات الجدوى</button>
+                <button class="category-filter" data-category="project-reports">تقارير المشاريع</button>
+                <button class="category-filter" data-category="analysis-reports">تقارير التحليل</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports Grid -->
+    <section class="research-grid-section">
+        <div class="container">
+            <div class="research-grid">
+                <!-- Report 1 -->
+                <div class="research-item" data-category="technical-reports">
+                    <div class="research-image">
+                        <img src="tak.jpg" alt="تقرير تقني">
+                        <div class="research-badge">تقرير شامل</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-file-pdf"></i> 45 صفحة</span>
+                                <span><i class="fas fa-download"></i> 120 تحميل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">تقرير تقني</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">تقرير تقني شامل: تطوير أنظمة الطاقة المتجددة</h3>
+                        <p class="research-abstract">تقرير مفصل يغطي جميع جوانب تطوير أنظمة الطاقة المتجددة، من التصميم إلى التنفيذ والصيانة، مع تحليل التكاليف والعائد...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">طاقة متجددة</span>
+                            <span class="research-tag">تحليل تقني</span>
+                            <span class="research-tag">دراسة جدوى</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openReportModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض التقرير</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadReport('renewable-energy-report.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Report 2 -->
+                <div class="research-item" data-category="feasibility-reports">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=دراسة+جدوى" alt="دراسة جدوى">
+                        <div class="research-badge">دراسة جدوى</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-chart-line"></i> تحليل اقتصادي</span>
+                                <span><i class="fas fa-calculator"></i> حسابات دقيقة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">دراسة جدوى</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <h3 class="research-title">دراسة جدوى مشروع المدينة الذكية المتكاملة</h3>
+                        <p class="research-abstract">دراسة شاملة لجدوى إنشاء مدينة ذكية متكاملة تشمل جميع الخدمات والبنية التحتية، مع تحليل التكاليف والعوائد المتوقعة...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">مدينة ذكية</span>
+                            <span class="research-tag">تحليل اقتصادي</span>
+                            <span class="research-tag">تخطيط حضري</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openReportModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض الدراسة</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadReport('smart-city-feasibility.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل الدراسة</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Report 3 -->
+                <div class="research-item" data-category="project-reports">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=تقرير+مشروع" alt="تقرير مشروع">
+                        <div class="research-badge">تقرير مشروع</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-tasks"></i> 12 مرحلة</span>
+                                <span><i class="fas fa-calendar-check"></i> 18 شهر</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">تقرير مشروع</span>
+                            <span class="research-date">2023</span>
+                        </div>
+                        <h3 class="research-title">تقرير مشروع تطوير نظام النقل الذكي</h3>
+                        <p class="research-abstract">تقرير مفصل عن مشروع تطوير نظام نقل ذكي متكامل، يغطي جميع مراحل المشروع من التخطيط إلى التنفيذ والتسليم...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">نقل ذكي</span>
+                            <span class="research-tag">إدارة مشاريع</span>
+                            <span class="research-tag">تطوير أنظمة</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openReportModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض التقرير</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadReport('smart-transport-report.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل التقرير</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Report 4 -->
+                <div class="research-item" data-category="analysis-reports">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/FF9800/ffffff?text=تقرير+تحليل" alt="تقرير تحليل">
+                        <div class="research-badge">تحليل شامل</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-database"></i> 10K+ نقطة بيانات</span>
+                                <span><i class="fas fa-chart-bar"></i> 25 رسم بياني</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">تقرير تحليل</span>
+                            <span class="research-date">2023</span>
+                        </div>
+                        <h3 class="research-title">تقرير تحليل أداء المباني الخضراء في المنطقة</h3>
+                        <p class="research-abstract">تحليل شامل لأداء المباني الخضراء في المنطقة، مع مقارنة الكفاءة والاستهلاك والتأثير البيئي، مع توصيات للتحسين...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">مباني خضراء</span>
+                            <span class="research-tag">تحليل أداء</span>
+                            <span class="research-tag">استدامة</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openReportModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض التحليل</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadReport('green-buildings-analysis.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل التحليل</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Report 5 -->
+                <div class="research-item" data-category="technical-reports">
+                    <div class="research-image">
+                        <img src="https://via.placeholder.com/400x300/9C27B0/ffffff?text=تقرير+تقني" alt="تقرير تقني">
+                        <div class="research-badge">تقرير متقدم</div>
+                        <div class="research-overlay">
+                            <div class="research-stats">
+                                <span><i class="fas fa-microchip"></i> تقنيات متقدمة</span>
+                                <span><i class="fas fa-rocket"></i> حلول مبتكرة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-type">تقرير تقني</span>
+                            <span class="research-date">2023</span>
+                        </div>
+                        <h3 class="research-title">تقرير تقني: تطبيق الذكاء الاصطناعي في الصناعة</h3>
+                        <p class="research-abstract">تقرير متقدم يغطي تطبيقات الذكاء الاصطناعي في الصناعة، مع دراسة حالات عملية وتوصيات للتطبيق والتنفيذ...</p>
+                        <div class="research-tags">
+                            <span class="research-tag">ذكاء اصطناعي</span>
+                            <span class="research-tag">صناعة 4.0</span>
+                            <span class="research-tag">أتمتة</span>
+                        </div>
+                        <div class="research-actions">
+                            <button class="research-btn primary" onclick="openReportModal(this)">
+                                <i class="fas fa-eye"></i>
+                                <span>عرض التقرير</span>
+                            </button>
+                            <button class="research-btn secondary" onclick="downloadReport('ai-industry-report.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>تحميل التقرير</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Modal -->
+    <div id="reportModal" class="modal">
+        <div class="modal-content research-modal">
+            <span class="close">&times;</span>
+            <div class="research-modal-header">
+                <div class="research-modal-meta">
+                    <span class="research-modal-type">تقرير مهني</span>
+                    <span class="research-modal-date">2024</span>
+                </div>
+                <h2 id="reportModalTitle">عنوان التقرير</h2>
+                <div class="research-modal-stats">
+                    <span><i class="fas fa-file-alt"></i> <span id="reportModalPages">عدد الصفحات</span></span>
+                    <span><i class="fas fa-calendar"></i> <span id="reportModalDuration">مدة العمل</span></span>
+                    <span><i class="fas fa-users"></i> <span id="reportModalTeam">الفريق</span></span>
+                </div>
+            </div>
+            <div class="research-modal-body">
+                <div class="research-modal-abstract">
+                    <h3>ملخص التقرير</h3>
+                    <p id="reportModalDescription">ملخص التقرير...</p>
+                </div>
+                <div class="research-modal-methodology">
+                    <h3>المنهجية والأساليب</h3>
+                    <p id="reportModalMethodology">المنهجية والأساليب...</p>
+                </div>
+                <div class="research-modal-results">
+                    <h3>النتائج والتوصيات</h3>
+                    <p id="reportModalResults">النتائج والتوصيات...</p>
+                </div>
+            </div>
+            <div class="research-modal-footer">
+                <button class="research-modal-btn primary" onclick="downloadFullReport()">
+                    <i class="fas fa-download"></i>
+                    <span>تحميل التقرير كاملاً</span>
+                </button>
+                <button class="research-modal-btn secondary" onclick="contactAboutReport()">
+                    <i class="fas fa-envelope"></i>
+                    <span>استفسار عن التقرير</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 معرض أعمال المهندس. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="reports-script.js"></script>
+</body>
+</html>
