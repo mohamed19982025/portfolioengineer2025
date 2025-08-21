@@ -45,3 +45,4 @@ echo "بعد 2-5 دقائق، سيكون موقعك متاح على:"
 echo "https://yourusername.github.io"
 echo ""
 read -p "اضغط Enter للخروج..."
+
