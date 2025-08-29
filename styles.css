@@ -91,6 +91,9 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero::before {
@@ -755,6 +758,25 @@ html {
 .loading {
     opacity: 0.6;
     pointer-events: none;
+}
+
+/* Enhanced Card Hover Effects with 3D Transforms */
+.portfolio-item,
+.research-item {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.portfolio-item:hover,
+.research-item:hover {
+    transform: translateY(-20px) rotateX(5deg) rotateY(2deg) scale(1.03);
+    box-shadow: 
+        0 40px 100px rgba(0,0,0,0.25),
+        0 0 60px rgba(102,126,234,0.4),
+        inset 0 0 0 2px rgba(255,255,255,0.3);
 }
 
 /* Hover Effects */
